@@ -111,9 +111,9 @@ img {
 }
 
 /* TODO: COLOCAR EFEITO DE GIRA O + AO PASSAR O HOVER  */
-/* .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
   display: block;
-} */
+}
 .plus {
   color: #8f6d4d;
   /* transition: rotatePlus 0.5s ease-in-out forwards; */
