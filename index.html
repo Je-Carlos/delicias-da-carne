@@ -155,7 +155,55 @@
           </div>
         </div>
       </div>
+      <div class="informacoes-finais">
+        <div class="contato">
+          <h2>Contato</h2>
+          <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
 
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required><br><br>
+
+            <label>Preferência:</label><br>
+            <input type="radio" id="pref-exoticas" name="preferencia" value="Carnes exóticas">
+            <label for="pref-exoticas">Carnes exóticas</label><br>
+
+            <input type="radio" id="pref-tradicionais" name="preferencia" value="Carnes tradicionais">
+            <label for="pref-tradicionais">Carnes tradicionais</label><br>
+
+            <input type="radio" id="pref-ambas" name="preferencia" value="Ambas">
+            <label for="pref-ambas">Ambas</label><br><br>
+
+            <label for="tipo-carne">Tipo de carne favorita:</label>
+            <select id="tipo-carne" name="tipo_carne">
+              <option value="Bovina">Bovina</option>
+              <option value="Suína">Suína</option>
+              <option value="Aves">Aves</option>
+              <option value="Frutos do Mar">Frutos do Mar</option>
+              <option value="Outras">Outras</option>
+            </select><br><br>
+
+            <label>Receber comunicações por:</label><br>
+            <input type="checkbox" id="comunicacoes-todos" name="comunicacoes[]" value="Todos os meios">
+            <label for="comunicacoes-todos">Todos os meios</label><br>
+
+            <input type="checkbox" id="comunicacoes-email" name="comunicacoes[]" value="Email">
+            <label for="comunicacoes-email">Email</label><br>
+
+            <input type="checkbox" id="comunicacoes-sms" name="comunicacoes[]" value="SMS">
+            <label for="comunicacoes-sms">SMS</label><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+          </form>
+        </div>
+      </div>
   </main>
   <script src="script.js"></script>
 </body>

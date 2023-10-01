@@ -188,3 +188,28 @@ main h2 {
   max-width: 320px;
   height: 450px;
 }
+.informacoes-finais {
+  background-color: #191716;
+  display: flex;
+}
+.contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1rem 0 1rem 5rem;
+}
+.contato h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #8f6d4d;
+  padding: 1.25em 0 0.625em 0;
+  width: 100%;
+  text-align: start;
+}
+.informacoes-finais label {
+  color: #ede9e5;
+  font-size: 0.75rem;
+}
