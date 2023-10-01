@@ -12,6 +12,7 @@ header {
 img {
   max-width: 100%;
   height: auto;
+  cursor: pointer;
 }
 .container {
   display: flex;
@@ -130,6 +131,9 @@ main h2 {
   height: 18.75rem;
   border: 0.125em solid #8f6d4d;
 }
+.cortes-nobres img:hover {
+  opacity: 0.7;
+}
 .container-cortes-exoticos {
   padding: 8em;
 }
@@ -141,3 +145,46 @@ main h2 {
   gap: 4em;
   max-width: 100%;
 } */
+.quem-somos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 100%;
+  background-color: #ffffff;
+  height: 600px;
+  width: 1600px;
+  margin: 0 auto;
+  box-shadow: 5px 10px #d3d3d3;
+}
+.titulo-quem-somos {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5em;
+  color: #000000;
+  text-align: start;
+  padding: 0 0 5rem 4rem;
+  flex-direction: column;
+}
+.texto-quem-somos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 18px;
+  gap: 3em;
+  padding: 0 4rem;
+  background-color: #ffffff;
+  margin: auto 0;
+}
+.localizacao-info {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.texto-localizacao {
+  font-size: 20px;
+  max-width: 320px;
+  height: 450px;
+}
