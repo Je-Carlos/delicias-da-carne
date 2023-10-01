@@ -15,11 +15,28 @@
       <img id="header-logo" src="assets/imgs/logo-header.svg" alt="logo bovino" />
       <nav class="header-listas-selecao">
         <ul>
-          <li><a href="carnes.php">Carnes +</a></li>
+          <li class="dropdown">
+            <a href="carnes.php" class="dropbtn">Carnes <span class="plus">+</span></a>
+            <div class="dropdown-content">
+              <a href="#">Bovino</a>
+              <a href="#">Suíno</a>
+              <a href="#">Cordeiro</a>
+              <a href="#">Dia a Dia</a>
+            </div>
+          </li>
           <li><a href="exoticas.php">Exóticas</a></li>
           <li><a href="kits.php">Kits</a></li>
           <li><a href="bebidas.php">Bebidas</a></li>
-          <li><a href="diversos.php">Diversos +</a></li>
+          <li class="dropdown">
+            <a href="diversos.php" class="dropbtn">Diversos <span class="plus">+</span></a>
+            <div class="dropdown-content">
+              <a href="#">Kits</a>
+              <a href="#">Bebidas</a>
+              <a href="#">Vestuário</a>
+              <a href="#">Acessórios</a>
+              <a href="#">Temperos e Acompanhamentos</a>
+            </div>
+          </li>
         </ul>
       </nav>
       <div class="header-listas-icons">
@@ -157,8 +174,8 @@
       </div>
       <div class="informacoes-finais">
         <div class="contato">
-          <h2>Contato</h2>
-          <form action="#" method="post">
+          <h2>Fale com o Delícias da Carne</h2>
+          <form action="#" class="valida-form" method="post" onsubmit="return validarFormulario(event)">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required><br><br>
 
@@ -169,13 +186,13 @@
             <input type="tel" id="telefone" name="telefone" required><br><br>
 
             <label>Preferência:</label><br>
-            <input type="radio" id="pref-exoticas" name="preferencia" value="Carnes exóticas">
+            <input type="checkbox" id="pref-exoticas" name="preferencia" value="Carnes exóticas">
             <label for="pref-exoticas">Carnes exóticas</label><br>
 
-            <input type="radio" id="pref-tradicionais" name="preferencia" value="Carnes tradicionais">
+            <input type="checkbox" id="pref-tradicionais" name="preferencia" value="Carnes tradicionais">
             <label for="pref-tradicionais">Carnes tradicionais</label><br>
 
-            <input type="radio" id="pref-ambas" name="preferencia" value="Ambas">
+            <input type="checkbox" id="pref-ambas" name="preferencia" value="Ambas">
             <label for="pref-ambas">Ambas</label><br><br>
 
             <label for="tipo-carne">Tipo de carne favorita:</label>
@@ -198,14 +215,35 @@
             <label for="comunicacoes-sms">SMS</label><br><br>
 
             <label for="mensagem">Mensagem:</label><br>
-            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
 
             <input type="submit" value="Enviar">
           </form>
         </div>
+        <div class="precisa-de-ajuda">
+          <h2>Precisa de ajuda?</h2>
+          <ul>
+            <li><a href="contato.html" onclick="event.preventDefault();">• Contato</a></li>
+            <li><a href="detalhes-conta.html" onclick="event.preventDefault();">• Detalhes da conta</a></li>
+            <li><a href="senha-perdida.html" onclick="event.preventDefault();">• Senha perdida</a></li>
+            <li><a href="cashback.html" onclick="event.preventDefault();">• Cashback</a></li>
+            <li><a href="entrega-devolucoes-trocas.html" onclick="event.preventDefault();">• Entrega, devoluções e
+                trocas</a></li>
+            <li><a href="termos-e-condicoes.html" onclick="event.preventDefault();">• Termos e condições</a></li>
+            <li><a href="politica-de-privacidade.html" onclick="event.preventDefault();">• Política de privacidade</a>
+            </li>
+          </ul>
+        </div>
       </div>
   </main>
-  <script src="script.js"></script>
+
+  <footer>
+    <p>
+      © 2023 Delícias da Carne. Todos os direitos reservados <a href="https://github.com/Je-Carlos"
+        target="_blank">Jean</a>.
+    </p>
+  </footer>
+  <script src="js/validaForms.js"></script>
 </body>
 
 </html>

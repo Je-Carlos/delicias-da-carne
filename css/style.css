@@ -34,6 +34,7 @@ img {
   justify-content: space-between;
   align-items: center;
   height: 6.25em;
+  gap: 3em;
 }
 .header-listas-selecao ul li a {
   text-decoration: none;
@@ -42,12 +43,13 @@ img {
   font-size: 1.25em;
   font-weight: bold;
   color: #ffffff;
-  text-transform: uppercase;
   cursor: pointer;
 }
+
 .header-listas-selecao ul li a:hover {
-  color: #c6b4a6;
+  color: #8f6d4d;
 }
+
 .header-listas-icons ul {
   font-size: 0.75em;
   list-style: none;
@@ -70,9 +72,62 @@ img {
 
 .banner img {
   width: 100%;
-  max-width: 1200px; /* Defina o valor máximo desejado */
-  height: auto; /* Para manter a proporção original */
+  max-width: 1200px;
+  height: auto;
 }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  padding: 10px !important;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  color: #000000 !important;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+  z-index: 1;
+  padding: 5px 5px;
+  margin-top: 1em;
+}
+
+.dropdown-content a {
+  color: #000000 !important;
+  padding: 18px 20px !important;
+  text-transform: none !important;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #8f6d4d;
+  color: #ede9e5 !important;
+}
+
+/* TODO: COLOCAR EFEITO DE GIRA O + AO PASSAR O HOVER  */
+/* .dropdown:hover .dropdown-content {
+  display: block;
+} */
+.plus {
+  color: #8f6d4d;
+  /* transition: rotatePlus 0.5s ease-in-out forwards; */
+}
+/* @keyframes rotatePlus {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(
+      90deg
+    );
+  }
+} */
 main h2 {
   font-family: "Oswald", serif;
   font-size: 2.5em;
@@ -182,6 +237,7 @@ main h2 {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  padding-bottom: 1.875rem;
 }
 .texto-localizacao {
   font-size: 20px;
@@ -191,16 +247,18 @@ main h2 {
 .informacoes-finais {
   background-color: #191716;
   display: flex;
+  justify-content: space-evenly;
 }
-.contato {
+.contato,
+.precisa-de-ajuda {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 1em;
   padding: 1rem 0 1rem 5rem;
 }
-.contato h2 {
+.contato h2,
+.precisa-de-ajuda h2 {
   font-family: "Oswald", sans-serif;
   font-size: 1rem;
   font-weight: bold;
@@ -212,4 +270,47 @@ main h2 {
 .informacoes-finais label {
   color: #ede9e5;
   font-size: 0.75rem;
+}
+.precisa-de-ajuda ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 6.25em;
+  width: 100%;
+  gap: 1em;
+}
+.precisa-de-ajuda ul li a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.precisa-de-ajuda ul li a:hover {
+  color: #c6b4a6;
+}
+footer {
+  background-color: #000000;
+  color: #d3d3d3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  gap: 2em;
+  padding: 1rem 0 1rem 0;
+}
+footer a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #916d51;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+footer a:hover {
+  color: #c6b4a6;
+  font-size: 1em;
 }
